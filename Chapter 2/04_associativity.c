@@ -1,4 +1,7 @@
 #include <stdio.h>
+// first see the presidence (the priorty of which arethmatic operator is more then we go for associativity which tells us in a same priority list from where to take it either from left to right or right-to-left)
+
+
 
 int main(){
     int a = 3;
