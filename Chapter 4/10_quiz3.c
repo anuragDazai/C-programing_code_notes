@@ -1,4 +1,4 @@
-// Write a program to print 'n' natural numbers in reverse order.
+// Write a program to print 'n' natural numbers in USING FOR LOOP.
 
 #include <stdio.h>
 
