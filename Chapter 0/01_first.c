@@ -7,6 +7,7 @@
     #include → Preprocessor directive.
     It tells the preprocessor to include a header file
     before the compilation process.
+    The #include directive is a preprocessor command that instructs the compiler to insert the contents of a specified file into the source code at the exact point where the directive appears.
 
     stdio.h → Header file.
     stdio = standard input/output
