@@ -38,7 +38,8 @@ int main()
 
     // Reusing the same function with raw integer literals:
     // 'sum(50, 75)' collapses directly to 125
-    int another_result = sum(50, 75); // these are arguments (50, 75)
+    int b = 75;
+    int another_result = sum(50, b); // these are arguments (50, 75) and b that the sum function recieves is the copy of the original int var b.
     printf("Second sum is: %d\n", another_result);
 
     return 0;

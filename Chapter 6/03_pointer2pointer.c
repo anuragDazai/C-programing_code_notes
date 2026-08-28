@@ -1,0 +1,2 @@
+// A pointer to a pointer (often called a double pointer) is a variable that stores the memory address of another pointer variable.
+// Instead of pointing directly to a plain value (like an int), it points to a pointer that is already pointing to that value
