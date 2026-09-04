@@ -13,3 +13,7 @@ int main(){
     printAddress(i);
     return 0;
 }
+
+// Are these addresses the same? No, the addresses are different.
+
+// Why? C uses Call by Value. When i is passed to printAddress(), a completely new stack frame is allocated for the function. The variable i inside the function is a separate local duplicate that resides in a different memory location on the stack.
