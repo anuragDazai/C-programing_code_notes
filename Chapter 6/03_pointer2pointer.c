@@ -3,11 +3,32 @@
 
 #include <stdio.h>
 
-int main(){
-    int i = 34;
-    int *j = &i;
-    int **k = &j;
-    printf("The pointer to i is j and it's location is: %p and it's pointer k and it's location is %p", j, k);
-    
+int main(void)
+{
+    int a = 50;
+    int *ptr = &a;
+    int **pptr = &ptr;
+
+    printf("Value of a:               %d\n", a);       // 50
+    printf("Value via *ptr (1 hop):   %d\n", *ptr);    // 50
+    printf("Value via **pptr (2 hops): %d\n\n", **pptr); // 50
+
+    // Modifying 'a' through 2 levels of indirection
+    **pptr = 999;
+    printf("Value of a after **pptr = 999: %d\n", a);  // 999
+
     return 0;
 }
+
+
+// int x = 10;
+// int *p = &x;
+// int **pp = &p;
+// Expression	What it gives
+// x	10
+// &x	Address of x
+// p	Address of x
+// *p	10
+// pp	Address of p
+// *pp	Address of x
+// **pp	10
