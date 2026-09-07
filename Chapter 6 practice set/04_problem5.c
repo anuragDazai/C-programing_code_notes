@@ -2,20 +2,26 @@
 
 #include <stdio.h>
 
-void multiplyByTen(int* ptr) // it takes the refrence of the variable as an argument, like the address of the variable
-{
-    *ptr = (*ptr) * 10; // so we passed a reference of the variable instead of the copy of the variable. and we passing the address of the variable to the function. so we can change the value of the variable in the function.
+int* sum(int a, int b){
+    int s = a +b;
+    printf("Sum: %d\n", s);
+    return &s; // we are returning the address of the local variable that is destroyed after the function ends, so as we return the address of the local variable it'll lead to undefined behavior when we try to access it in main(). This is a common mistake in C programming.
 }
-int main(void)
-{
-    int num = 7;
 
-    printf("Value before function call: %d\n", num);
+int* average(int a, int b){
+    int avg =  (a + b) / 2.0;
+    printf("Average: %.2f\n", avg);
+    return &avg;
+}   
 
-    // Passing address of 'num'
-    multiplyByTen(&num); 
+int main(){
+    int a = 20;
+    int b = 30;
+    int* ptr1;
+    int* ptr2;
 
-    printf("Value after function call:  %d\n", num); // 70
-
+    ptr1 = sum(a, b);
+    ptr2 = average(a, b);
+    printf("The memory location of the sum is  %u and the average is %u", ptr1, ptr2);
     return 0;
 }
