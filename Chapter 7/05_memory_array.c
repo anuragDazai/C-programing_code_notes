@@ -14,8 +14,11 @@
 int main(){
     int arr[3] = {2, 3, 4};
     for(int i =0; i<3; i++){
+        // Access the array element using pointer arithmetic.
+        // arr[i] is equivalent to *(arr + i).
         int a = 
         printf("The address of %d is %d\n", arr[i], &arr[i]);
     }
+    // similarly we can get the array elements using pointer arethmetic like a++, to get the next block after the arr[0] as we proceed.
     return 0;
 }
