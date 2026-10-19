@@ -8,8 +8,15 @@ int main(){
     int num[30]; // this says to the compiler that be ready to store 30 elements of integer type in the num variable acting as a array.
     num[0] = 30; // we are storing 30 in first index of the num array.
     num[1] = 60;
+    num[2] = 90;
     // we can go from 0 to 89 elemetns in num array, because it already created a continious memory and saved it for the array elements for the 30 elements of integer type. So, we can store 30 elements in the num array.
     printf("The marks of the index 0: %d and 1: %d", num[0], num[1]);
     
     return 0;
 }
+
+
+// Memory Address:   0x1000       0x1004       0x1008       0x100C
+// Element:        | arr[0]     | arr[1]     | arr[2]     | arr[3]     |
+// Value:          |   10       |   20       |   30       |   40       |
+// Size:           |<- 4 bytes->|<- 4 bytes->|<- 4 bytes->|<- 4 bytes->|
