@@ -6,7 +6,7 @@
 int main(){
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     // int *ptr = &arr[0];
-    int *ptr = arr; // Points to arr[0]
-    printf("The third element is %d", *(ptr + 2)); // it means we adding twice to the existing address of the first element of the array, so it will point to the third element of the array.
+    int *ptr = arr; // Points to arr[0], not the value.
+    printf("The third element is %d at address: %u", *(ptr + 2), ptr+2); // it means we adding twice to the existing address of the first element of the array, so it will point to the third element of the array.
     return 0;
 }
