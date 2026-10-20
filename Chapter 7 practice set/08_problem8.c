@@ -2,13 +2,13 @@
 
 #include <stdio.h>
 
-void multiplication(int mul[], int arr[][10]) // when passing a 2D array to a function, you must specify the number of columns
+void multiplication(int multi[], int array[][10]) // when passing a 2D array to a function, you must specify the number of columns
 {
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 10; j++)
         {
-            arr[i][j] = mul[i] * (j + 1);
+            array[i][j] = multi[i] * (j + 1); // it changes the origian array's elemets i.e arr[3][10] in main function
         }
     }
 }
@@ -22,7 +22,7 @@ int main()
     scanf("%d %d %d", &a, &b, &c);
 
     int mul[] = {a, b, c};
-    multiplication(mul, arr);
+    multiplication(mul, arr); // we sending the copy of the address of the original array to the function, so any changes made to the array in the function will affect the original array.
     
     for (int i = 0; i < 10; i++)
     {
