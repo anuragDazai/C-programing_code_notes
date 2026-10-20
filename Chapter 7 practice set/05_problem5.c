@@ -1,0 +1,33 @@
+// Write a program containing a function which reverses the array passed to it.
+
+
+#include <stdio.h>
+
+void reverse(int arr[], int size, int rev[]);
+void printArray(int arr[], int size);
+
+int main(void) {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int rev[5] = {0};
+
+    reverse(arr, size, rev);
+    printArray(rev, size);
+
+    return 0;
+}
+
+void reverse(int arr[], int size, int rev[]) {
+    for (int i = 0; i < size; i++) {
+        rev[i] = arr[size - 1 - i];
+    }
+}
+
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d%s", arr[i], i < size - 1 ? ", " : "\n");
+    }
+}
+
+
+// formatted via AI
