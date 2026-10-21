@@ -47,6 +47,5 @@ int main()
      *
      * str2[0] = 'B'; // Uncommenting this causes a Segmentation Fault
      */
-
     return 0;
 }
