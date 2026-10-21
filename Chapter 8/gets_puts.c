@@ -16,5 +16,9 @@ int main()
     puts(str); // Prints the input string and goes to a new line
 
     // 🚨 WHY YOU SHOULD NEVER USE IT (Buffer Overflow):gets() does not check array bounds. If you declare an array of size 10 (char str[10];) and the user types 50 characters, gets() will happily keep writing those extra 40 characters past the end of the array into random computer memory. This causes a Buffer Overflow, which can crash your program or create severe security vulnerabilities.
+
+    //     1. puts() and gets() (Strictly for Strings)
+    // puts() expects a pointer to a null-terminated string (char *). It cannot print numbers, floats, or raw data directly unless you format them first.
+    // gets() (which you shouldn't use anyway due to security flaws) only reads a sequence of characters into a string buffer until the user presses Enter.
     return 0;
 }
