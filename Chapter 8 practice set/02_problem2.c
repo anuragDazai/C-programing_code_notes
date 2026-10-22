@@ -16,7 +16,7 @@ int main() {
 
     // 3. Allocate a buffer for the second string.
     // If we want to read 5 characters, we need 6 elements (5 chars + 1 for '\0').
-    char str2[7];
+    char str2[6];
     
     printf("Enter the second string (up to 6 characters): ");
     
