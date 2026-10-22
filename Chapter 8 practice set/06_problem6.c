@@ -11,7 +11,7 @@ void encrypt(char *str){ // it takes the arrray pointer as an argument
 }
 
 int main(){
-    char str[] = {"Anurag"};
+    char str[] = {"Anurag is a good boy."};
     encrypt(str);
     printf("Original string: %s\n", str); // the original string will be modified because we are passing the array pointer to the function. So, the original string will be modified.
     return 0;
