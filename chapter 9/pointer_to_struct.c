@@ -25,6 +25,23 @@ int main(void) {
 }
 
 
+
+// What if we have an array of structures and a pointer?
+// Now we combine everything.
+// struct Student students[3] = {
+//     {"Anurag", 19, 85.5f},
+//     {"Rahul", 20, 78.0f},
+//     {"Maya", 18, 91.0f}
+// };
+
+// struct Student *ptr = students;
+
+
+// Why does this work?
+
+// In most expressions, the array students converts to a pointer to its first element.
+
+
 // Method B: Use the arrow operator
 // ptr->age
 
