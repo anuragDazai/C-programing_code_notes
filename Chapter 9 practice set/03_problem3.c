@@ -1,0 +1,3 @@
+// Twenty integers are to be stored in memory. What will you prefer - Array or structure?
+
+// i would prefer to use an array to store twenty integers in memory, bacause it's more convienient and we can access the elements using an index. An array is a collection of elements of the same type stored in contiguous memory locations, which makes it efficient for storing and accessing multiple values of the same type.
