@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 int main() {
+    // FILE isn't a datatype but it's a structure that contains information about the file, such as its name, mode (read, write, etc.), and current position in the file. The FILE structure is defined in the stdio.h header file and is used to manage file operations in C.
     FILE *fptr; // Declare a file pointer, a file pointer is a variable that holds the address of a FILE object, which represents an open file in C. It is used to perform various file operations, such as reading from or writing to a file. The FILE pointer allows the program to interact with the file system and manage files effectively.
     fptr = fopen("dazai.txt", "r"); // we already saved up the space for a file usign a file pointer, now we can use the file methods to operate on a file.
     int num;
